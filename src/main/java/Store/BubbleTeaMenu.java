@@ -2,22 +2,22 @@ package Store;
 
 public class BubbleTeaMenu {
     private static final double DEFAULT_PRICE = 50.00;
-    private String name;
+    private String customerName;
     private BubbleTea[] tea;
     private double price;
 
-    public BubbleTeaMenu(String name, BubbleTea[] tea, double price){
-        this.name = name;
+    public BubbleTeaMenu(String customerName, BubbleTea[] tea, double price){
+        this.customerName = customerName;
         this.price = price;
         this.tea = tea;
     }
 
-    public String getName() {
-        return name;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public BubbleTea[] getTea() {
