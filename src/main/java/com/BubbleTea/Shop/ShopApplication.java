@@ -23,7 +23,8 @@ public class ShopApplication {
 				"How to use this shop?\n" +
 				"1. /shop to view all menu\n" +
 				"2. /order(number of tea flavor)/(number of bubble type) to order tea eg./order1/1 \n" +
-				"3. /vieworder to see all you order";
+				"3. /vieworder to see all you order\n" +
+				"4. /clearorder to reset order";
 	}
 
 	@RequestMapping("/shop")
@@ -44,6 +45,12 @@ public class ShopApplication {
 	@RequestMapping("/vieworder")
 	public ArrayList<BubbleTea> viewOrder(){
 		return ORDER;
+	}
+
+	@RequestMapping("/clearorder")
+	public String clear(){
+		ORDER.clear();
+		return "Order cleared";
 	}
 
 }
