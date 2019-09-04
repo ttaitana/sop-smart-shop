@@ -1,23 +1,23 @@
-package Store;
+package com.BubbleTea.Shop;
 
 public class BubbleTeaMenu {
     private static final double DEFAULT_PRICE = 50.00;
-    private String customerName;
+    private String MenuName;
     private BubbleTea[] tea;
     private double price;
 
-    public BubbleTeaMenu(String customerName, BubbleTea[] tea, double price){
-        this.customerName = customerName;
+    public BubbleTeaMenu(String MenuName, BubbleTea[] tea, double price){
+        this.MenuName = MenuName;
         this.price = price;
         this.tea = tea;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getMenuName() {
+        return MenuName;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setMenuName(String menuName) {
+        this.MenuName = menuName;
     }
 
     public BubbleTea[] getTea() {

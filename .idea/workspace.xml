@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41c26b6c-e5fb-48e3-9324-6ba6f75edb1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaFactory.java" afterDir="false" />
+    <list default="true" id="ece1dfc2-8d3e-4584-9258-d75ae3cc2a9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/ShopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Store/SpringBoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Store/SpringBoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Store/SpringBoot.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,40 +20,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectId" id="1QNF9w318AkeZKq7coRukyfzmPk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectId" id="1QH4pZMepyeI5tmo7Lis6TBvrKj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Facets" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wAnnO\Desktop\Shop\src\main\java\com\BubbleTea\Shop" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,66 +57,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBoot">
-    <configuration name="SpringBootHelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Store.SpringBootHelloWorld" />
-      <module name="bubbletea" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Store.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager">
+    <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Shop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.BubbleTea.Shop.ShopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Store.main" />
-      <module name="bubbletea" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Store.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bubbletea" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Store.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="Store.SpringBoot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.SpringBoot" />
-        <item itemvalue="Application.SpringBootHelloWorld" />
-        <item itemvalue="Application.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="41c26b6c-e5fb-48e3-9324-6ba6f75edb1f" name="Default Changelist" comment="" />
-      <created>1567414371470</created>
+      <changelist id="ece1dfc2-8d3e-4584-9258-d75ae3cc2a9f" name="Default Changelist" comment="" />
+      <created>1567602999027</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567414371470</updated>
-      <workItem from="1567414377895" duration="5175000" />
-      <workItem from="1567421050848" duration="1891000" />
+      <updated>1567602999027</updated>
+      <workItem from="1567603023652" duration="1298000" />
+      <workItem from="1567604656554" duration="77000" />
     </task>
     <servers />
   </component>
@@ -139,5 +96,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package Store;
+package com.BubbleTea.Shop;
 
 public class BubbleTea {
     public static final String[] TEA_FLAVORS = new String[]{
@@ -8,8 +8,6 @@ public class BubbleTea {
             "Coffee Tea",
             "Hazelnut Milk Tea",
             "Purple Taro Milk Tea",
-            "Lychee Tea",
-            "Strawberry Tea"
     };
     public static final String[] BUBBLE_TYPE = new String[]{
             "No Bubble",
