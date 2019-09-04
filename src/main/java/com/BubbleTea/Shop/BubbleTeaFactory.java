@@ -1,43 +1,43 @@
 package com.BubbleTea.Shop;
 
 public class BubbleTeaFactory {
-    public static final BubbleTeaMenu[] BUBBLE_TEA_MENUS = new BubbleTeaMenu[]{
-            new BubbleTeaMenu("Menu1", new BubbleTea[]{
-                    new BubbleTea(1, 1),
-                    new BubbleTea(1, 2),
-                    new BubbleTea(1, 3),
-                    new BubbleTea(1, 4),
-            }, 55),
-            new BubbleTeaMenu("Menu2", new BubbleTea[]{
-                    new BubbleTea(2, 1),
-                    new BubbleTea(2, 2),
-                    new BubbleTea(2, 3),
-                    new BubbleTea(2, 4),
-            }, 55),
-            new BubbleTeaMenu("Menu3", new BubbleTea[]{
-                    new BubbleTea(3, 1),
-                    new BubbleTea(3, 2),
-                    new BubbleTea(3, 3),
-                    new BubbleTea(3, 4),
-            }, 55),
-            new BubbleTeaMenu("Menu4", new BubbleTea[]{
-                    new BubbleTea(4, 1),
-                    new BubbleTea(4, 2),
-                    new BubbleTea(4, 3),
-                    new BubbleTea(4, 4),
-            }, 55),
-            new BubbleTeaMenu("Menu5", new BubbleTea[]{
-                    new BubbleTea(5, 1),
-                    new BubbleTea(5, 2),
-                    new BubbleTea(5, 3),
-                    new BubbleTea(5, 4),
-            }, 55)
-    };
 
-    public static BubbleTeaMenu viewMenu(int menu){
-        return (BubbleTeaMenu) BUBBLE_TEA_MENUS[menu];
+    public static BubbleTeaMenu[] viewMenu(){
+        return new BubbleTeaMenu[]{
+                new BubbleTeaMenu("Milk Tea", new BubbleTea[]{
+                        new BubbleTea(1, 0),
+                        new BubbleTea(1, 1),
+                        new BubbleTea(1, 2),
+                        new BubbleTea(1, 3),
+                }, 55),
+                new BubbleTeaMenu("Green Tea", new BubbleTea[]{
+                        new BubbleTea(2, 0),
+                        new BubbleTea(2, 1),
+                        new BubbleTea(2, 2),
+                        new BubbleTea(2, 3),
+                }, 55),
+                new BubbleTeaMenu("Coffee Tea", new BubbleTea[]{
+                        new BubbleTea(3, 0),
+                        new BubbleTea(3, 1),
+                        new BubbleTea(3, 2),
+                        new BubbleTea(3, 3),
+                }, 55),
+                new BubbleTeaMenu("Hazelnut Milk Tea", new BubbleTea[]{
+                        new BubbleTea(4, 0),
+                        new BubbleTea(4, 1),
+                        new BubbleTea(4, 2),
+                        new BubbleTea(4, 3),
+                }, 55),
+                new BubbleTeaMenu("Purple Taro Milk Tea", new BubbleTea[]{
+                        new BubbleTea(5, 0),
+                        new BubbleTea(5, 1),
+                        new BubbleTea(5, 2),
+                        new BubbleTea(5, 3),
+                }, 55)
+        };
     }
-    public static BubbleTeaMenu[] viewMenuList(){
-        return BUBBLE_TEA_MENUS;
+
+    public static BubbleTea addOrder(int flavor, int bubble){
+        return new BubbleTea(flavor, bubble);
     }
 }

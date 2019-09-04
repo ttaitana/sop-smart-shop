@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece1dfc2-8d3e-4584-9258-d75ae3cc2a9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/ShopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Store/BubbleTeaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Store/SpringBoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/ShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/ShopApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +30,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -77,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567602999027</updated>
       <workItem from="1567603023652" duration="1298000" />
-      <workItem from="1567604656554" duration="77000" />
+      <workItem from="1567604656554" duration="4115000" />
     </task>
     <servers />
   </component>
