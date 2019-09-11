@@ -1,6 +1,8 @@
 package com.BubbleTea.Shop;
 
-public class BubbleTea {
+import java.io.Serializable;
+
+public class BubbleTea implements Serializable {
     public static final String[] TEA_FLAVORS = new String[]{
             "(any)",
             "Milk Tea",

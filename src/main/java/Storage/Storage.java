@@ -5,7 +5,7 @@ import com.BubbleTea.Shop.BubbleTea;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Storage{
+public class Storage {
     public ArrayList<BubbleTea> loadFile() throws IOException {
         File f = new File("storage.txt");
         if(!f.exists()){
@@ -37,7 +37,6 @@ public class Storage{
         }catch (IOException e){
             System.out.println(e.getStackTrace());
         }
-
     }
 }
 
