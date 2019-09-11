@@ -12,9 +12,25 @@ public class BubbleTea {
     public static final String[] BUBBLE_TYPE = new String[]{
             "No Bubble",
             "Black Bubble",
-            "Gold Bubble",
+            "Golden Bubble",
             "Green Bubble"
     };
+    private static BubbleTea instance;
+
+    public BubbleTea() {
+
+    }
+
+    public static BubbleTea getInstance(int flavor, int bubble) {
+        if (instance == null)
+            instance = new BubbleTea(flavor, bubble);
+        return instance;
+    }
+    public static BubbleTea getInstance() {
+        if (instance == null)
+            instance = new BubbleTea();
+        return instance;
+    }
     private String flavor;
     private String bubble;
 
@@ -27,6 +43,10 @@ public class BubbleTea {
         }
         this.flavor = TEA_FLAVORS[flavor];
         this.bubble = BUBBLE_TYPE[bubble];
+    }
+    public BubbleTea(String flavor, String bubble){
+        this.flavor = flavor;
+        this.bubble = bubble;
     }
 
 //    public String[] getTeaAllFlavors(){

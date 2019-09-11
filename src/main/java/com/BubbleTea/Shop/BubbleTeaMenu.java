@@ -26,7 +26,7 @@ public class BubbleTeaMenu {
 
     public void setTea(BubbleTea[] tea) {
         if (tea.length == 0){
-            this.tea = new BubbleTea[]{new BubbleTea(0, 0)};
+            this.tea = new BubbleTea[]{BubbleTea.getInstance()};
         }else{
             this.tea = tea;
         }

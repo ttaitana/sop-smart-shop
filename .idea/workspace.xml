@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece1dfc2-8d3e-4584-9258-d75ae3cc2a9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Storage/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/BubbleTeaMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/ShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BubbleTea/Shop/ShopApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,6 +15,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,7 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1567602999027</updated>
       <workItem from="1567603023652" duration="1298000" />
-      <workItem from="1567604656554" duration="4361000" />
+      <workItem from="1567604656554" duration="4435000" />
+      <workItem from="1568203613311" duration="9369000" />
     </task>
     <servers />
   </component>

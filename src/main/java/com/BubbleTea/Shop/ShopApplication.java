@@ -1,24 +1,37 @@
 package com.BubbleTea.Shop;
 
+import Storage.Storage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 @SpringBootApplication
 @RestController
+
 public class ShopApplication {
-	public static ArrayList<BubbleTea> ORDER = new ArrayList<BubbleTea>();
+	public static Storage store = new Storage();
+	public static ArrayList<BubbleTea> ORDER;
+
+	static {
+		try {
+			ORDER = store.loadFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	//public static ArrayList<BubbleTea> ORDER = new ArrayList<BubbleTea>();
 	public static void main(String[] args) {
 		SpringApplication.run(ShopApplication.class, args);
 	}
 
 	@RequestMapping("/")
-	public String home() {
+	public String home(){
 		return "Welcome to SOP Smart BubbleTea Shop! \n" +
 				"How to use this shop?\n" +
 				"1. /shop to view all menu\n" +
@@ -27,29 +40,31 @@ public class ShopApplication {
 				"4. /clearorder to reset order";
 	}
 
-	@RequestMapping("/shop")
-	public BubbleTeaMenu[] viewMenuList(){
+	@RequestMapping(value = "/shop")
+	public ResponseEntity<BubbleTeaMenu[]> viewMenuList(){
 		System.out.println("Welcome");
-		return BubbleTeaFactory.viewMenu();
+		return new ResponseEntity<BubbleTeaMenu[]>(BubbleTeaFactory.viewMenu(), HttpStatus.OK);
 	}
 
-	@RequestMapping("/order{flavor}/{bubble}")
-	@ResponseBody
-	public ArrayList<BubbleTea> addOrder(@PathVariable int flavor, @PathVariable int bubble){
+	@RequestMapping(value = "/order", method = RequestMethod.POST)
+	public ResponseEntity<ArrayList<BubbleTea>> addOrder(@RequestBody BubbleTea boba) throws IOException {
 		System.out.println("Add order");
-		ORDER.add(BubbleTeaFactory.addOrder(flavor, bubble));
+		BubbleTea bb = boba;
+		ORDER.add(boba);
 		System.out.println(ORDER.get(0));
-		return ORDER;
+		store.saveFile(ORDER);
+		return new ResponseEntity<ArrayList<BubbleTea>>(ORDER, HttpStatus.OK);
 	}
 
-	@RequestMapping("/vieworder")
-	public ArrayList<BubbleTea> viewOrder(){
-		return ORDER;
+	@RequestMapping(value = "/vieworder")
+	public ResponseEntity<ArrayList<BubbleTea>> viewOrder(){
+		return new ResponseEntity<ArrayList<BubbleTea>>(ORDER, HttpStatus.OK);
 	}
 
-	@RequestMapping("/clearorder")
+	@RequestMapping(value = "/clearorder")
 	public String clear(){
 		ORDER.clear();
+        store.saveFile(ORDER);
 		return "Order cleared";
 	}
 
